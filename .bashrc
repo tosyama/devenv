@@ -114,4 +114,5 @@ if ! shopt -oq posix; then
 fi
 
 source ~/git-completion.bash
+export FIGNORE=$FIGNORE:.h:.o
 
