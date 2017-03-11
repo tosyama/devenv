@@ -11,3 +11,5 @@ set autoread
 set ambiwidth=double
 set t_Co=256
 nnoremap <Space>r :redraw!<CR>
+nnoremap L zlzl
+nnoremap H zhzh
