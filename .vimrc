@@ -7,5 +7,7 @@ set smartindent
 set nowrap
 set number
 set noswapfile
+set autoread
+set ambiwidth=double
 set t_Co=256
-
+nnoremap <Space>r :redraw!<CR>

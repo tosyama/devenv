@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOT_FILES=(.vimrc)
+DOT_FILES=(.vimrc .tmux.conf)
 
 for file in ${DOT_FILES[@]}
 do
