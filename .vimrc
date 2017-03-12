@@ -13,3 +13,7 @@ set t_Co=256
 nnoremap <Space>r :redraw!<CR>
 nnoremap L zlzl
 nnoremap H zhzh
+nnoremap J 5j
+nnoremap K 5k
+nnoremap <Space>j J
+nnoremap <Space>p "0p
