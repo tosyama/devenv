@@ -17,3 +17,4 @@ nnoremap J 5j
 nnoremap K 5k
 nnoremap <Space>j J
 nnoremap <Space>p "0p
+nnoremap <Space>mk :w<CR>:mak<CR>
