@@ -10,11 +10,17 @@ set noswapfile
 set autoread
 set ambiwidth=double
 set t_Co=256
+
 nnoremap <Space>r :redraw!<CR>
-nnoremap L zlzl
-nnoremap H zhzh
+nnoremap L 3zl
+nnoremap H 3zh
 nnoremap J 5j
 nnoremap K 5k
 nnoremap <Space>j J
 nnoremap <Space>p "0p
 nnoremap <Space>mk :w<CR>:mak<CR>
+
+inoremap () ()<Left>
+inoremap [] []<Left>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
