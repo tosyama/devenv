@@ -1,3 +1,4 @@
+syntax on
 set encoding=utf-8
 set tabstop=4
 set shiftwidth=4
@@ -25,3 +26,13 @@ inoremap () ()<Left>
 inoremap [] []<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
+
+" dein settings
+let s:dein_dir = expand('~/.cache/dein')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+if &runtimepath !~# '/dein.vim'
+	if !isdirectory(s:dein_repo_dir)
+		execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+	endif
+	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+endif
