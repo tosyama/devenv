@@ -5,7 +5,7 @@ set softtabstop=0
 set autoindent
 set smartindent
 set nowrap
-set number
+"set number
 set noswapfile
 set autoread
 set ambiwidth=double
@@ -45,6 +45,7 @@ if dein#load_state(s:dein_dir)
 	call dein#begin(s:dein_dir)
 	call dein#add('Shougo/dein.vim')
 	call dein#add('Shougo/vimproc.vim')
+	call dein#add('Shougo/neocomplcache')
 	call dein#add('airblade/vim-gitgutter')
 	call dein#add('leafgarland/typescript-vim')
 	call dein#end()
@@ -55,3 +56,4 @@ if dein#check_install()
   call dein#install()
 endif
 syntax on
+let g:neocomplcache_enable_at_startup = 1
