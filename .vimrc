@@ -46,6 +46,7 @@ if dein#load_state(s:dein_dir)
 	call dein#add('Shougo/dein.vim')
 	call dein#add('Shougo/vimproc.vim')
 	call dein#add('airblade/vim-gitgutter')
+	call dein#add('leafgarland/typescript-vim')
 	call dein#end()
 	call dein#save_state()
 endif
