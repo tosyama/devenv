@@ -10,6 +10,7 @@ set noswapfile
 set autoread
 set ambiwidth=double
 set t_Co=256
+set updatetime=250
 
 nnoremap L 3zl
 nnoremap H 3zh
@@ -44,6 +45,7 @@ if dein#load_state(s:dein_dir)
 	call dein#begin(s:dein_dir)
 	call dein#add('Shougo/dein.vim')
 	call dein#add('Shougo/vimproc.vim')
+	call dein#add('airblade/vim-gitgutter')
 	call dein#end()
 	call dein#save_state()
 endif
