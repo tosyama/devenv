@@ -48,6 +48,7 @@ if dein#load_state(s:dein_dir)
 	call dein#add('Shougo/neocomplcache')
 	call dein#add('airblade/vim-gitgutter')
 	call dein#add('leafgarland/typescript-vim')
+	call dein#add('w0ng/vim-hybrid')
 	call dein#end()
 	call dein#save_state()
 endif
@@ -55,5 +56,8 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+set background=dark
+colorscheme hybrid
 syntax on
 let g:neocomplcache_enable_at_startup = 1
