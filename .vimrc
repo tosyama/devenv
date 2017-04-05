@@ -17,7 +17,7 @@ nnoremap H 3zh
 nnoremap J 5j
 nnoremap K 5k
 nnoremap <Space>j J
-nnoremap <Space>r :redraw!<CR>
+nnoremap <Space>r :redraw!<CR>:redraw!<CR>:redraw!<CR>
 nnoremap <Space>p "0p
 nnoremap <Space>mk :w<CR>:mak<CR>
 nnoremap <Space>ww :w<CR>
@@ -44,7 +44,7 @@ endif
 if dein#load_state(s:dein_dir)
 	call dein#begin(s:dein_dir)
 	call dein#add('Shougo/dein.vim')
-	call dein#add('Shougo/vimproc.vim')
+	call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 	call dein#add('Shougo/neocomplcache')
 	call dein#add('airblade/vim-gitgutter')
 	call dein#add('leafgarland/typescript-vim')
