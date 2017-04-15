@@ -2,6 +2,7 @@ set encoding=utf-8
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
+set hidden
 set autoindent
 set smartindent
 set nowrap
@@ -22,10 +23,6 @@ nnoremap <Space>p "0p
 nnoremap <Space>mk :w<CR>:mak<CR>
 nnoremap <Space>ww :w<CR>
 
-inoremap () ()<Left>
-inoremap [] []<Left>
-inoremap "" ""<Left>
-inoremap '' ''<Left>
 
 " dein settings
 if &compatible
@@ -59,5 +56,6 @@ endif
 
 set background=dark
 colorscheme hybrid
+set cursorline
 syntax on
 let g:neocomplcache_enable_at_startup = 1
