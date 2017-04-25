@@ -17,12 +17,13 @@ nnoremap L 3zl
 nnoremap H 3zh
 nnoremap J 5j
 nnoremap K 5k
+nnoremap c x
 nnoremap <Space>j J
 nnoremap <Space>r :redraw!<CR>:redraw!<CR>:redraw!<CR>
 nnoremap <Space>p "0p
 nnoremap <Space>mk :w<CR>:mak<CR>
 nnoremap <Space>ww :w<CR>
-
+nnoremap <Space>b <C-^>
 
 " dein settings
 if &compatible
