@@ -21,8 +21,8 @@ nnoremap c x
 nnoremap <Space>j J
 nnoremap <Space>r :redraw!<CR>:redraw!<CR>:redraw!<CR>
 nnoremap <Space>p "0p
-nnoremap <Space>mk :w<CR>:mak<CR>
-nnoremap <Space>ww :w<CR>
+nnoremap <Space>mk :wa<CR>:mak<CR>
+nnoremap <Space>ww :wa<CR>
 nnoremap <Space>b <C-^>
 
 " dein settings
