@@ -24,6 +24,7 @@ nnoremap <Space>p "0p
 nnoremap <Space>mk :wa<CR>:mak<CR>
 nnoremap <Space>ww :wa<CR>
 nnoremap <Space>b <C-^>
+nnoremap <Space>f :b<Space>
 
 " dein settings
 if &compatible
