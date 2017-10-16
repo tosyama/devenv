@@ -12,6 +12,7 @@ set autoread
 set ambiwidth=double
 set t_Co=256
 set updatetime=250
+set wildignore=*.o
 
 nnoremap L 3zl
 nnoremap H 3zh
@@ -24,7 +25,6 @@ nnoremap <Space>p "0p
 nnoremap <Space>mk :wa<CR>:make<CR>
 nnoremap <Space>ww :wa<CR>
 nnoremap <Space>b <C-^>
-nnoremap <Space>f :b<Space>
 inoremap -/	->
 
 " dein settings
@@ -49,6 +49,7 @@ if dein#load_state(s:dein_dir)
 	call dein#add('airblade/vim-gitgutter')
 	call dein#add('leafgarland/typescript-vim')
 	call dein#add('w0ng/vim-hybrid')
+	call dein#add('ctrlpvim/ctrlp.vim')
 	call dein#end()
 	call dein#save_state()
 endif
@@ -62,3 +63,9 @@ colorscheme hybrid
 set cursorline
 syntax on
 let g:neocomplcache_enable_at_startup = 1
+
+let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp = 1
+
+au BufRead,BufNewFile *.pa set filetype=go
+
