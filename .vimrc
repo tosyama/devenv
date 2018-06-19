@@ -66,7 +66,7 @@ let g:neocomplcache_enable_at_startup = 1
 
 let g:ctrlp_by_filename = 1
 let g:ctrlp_regexp = 1
-let g:ctrlp_custom_ignore = {'file': '\v^[a-zA-Z0-1_/]+$'}
+let g:ctrlp_custom_ignore = {'file': '\m^\(\(Makefile\)\@![^.]\)*$'}
 
 au BufRead,BufNewFile *.pa set filetype=go
 
