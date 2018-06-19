@@ -12,7 +12,7 @@ set autoread
 set ambiwidth=double
 set t_Co=256
 set updatetime=250
-set wildignore=*.o
+set wildignore=*.o,*/libs/*,*/objs/*
 
 nnoremap L 3zl
 nnoremap H 3zh
@@ -66,6 +66,7 @@ let g:neocomplcache_enable_at_startup = 1
 
 let g:ctrlp_by_filename = 1
 let g:ctrlp_regexp = 1
+let g:ctrlp_custom_ignore = {'file': '\v^[a-zA-Z0-1_/]+$'}
 
 au BufRead,BufNewFile *.pa set filetype=go
 
