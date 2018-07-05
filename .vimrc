@@ -70,3 +70,6 @@ let g:ctrlp_custom_ignore = {'file': '\m^\(\(Makefile\)\@![^.]\)*$'}
 
 au BufRead,BufNewFile *.pa set filetype=go
 
+"for BOOST_ASSERT
+let &errorformat = '%.%#: %f:%l: %m,' . &errorformat
+
